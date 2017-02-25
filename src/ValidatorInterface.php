@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Validation\ValidatorInterface;
+namespace Dhii\Validation;
 
 use Dhii\Util\String\StringableInterface;
 
