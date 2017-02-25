@@ -10,7 +10,7 @@ use Dhii\Util\String\StringableInterface;
  *
  * @since [*next-version*]
  */
-interface ValidationFailedException extends ValidationExceptionInterface
+interface ValidationFailedExceptionInterface extends ValidationExceptionInterface
 {
     /**
      * @since [*next-version*]
