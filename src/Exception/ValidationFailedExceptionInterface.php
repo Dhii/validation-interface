@@ -19,8 +19,8 @@ interface ValidationFailedExceptionInterface extends ValidationExceptionInterfac
      * @since 0.1
      *
      * @return string[]|StringableInterface[]|Traversable A list of errors.
-     *                                                     Each error is something that can be treated as a string, and represents
-     *                                                     a description of why a validation subject is invalid.
+     *                                                    Each error is something that can be treated as a string, and represents
+     *                                                    a description of why a validation subject is invalid.
      */
     public function getValidationErrors();
 }
