@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Validation;
+namespace Dhii\Validation\Exception;
 
 /**
  * Something that can represent an exception which can occur in or be related to
