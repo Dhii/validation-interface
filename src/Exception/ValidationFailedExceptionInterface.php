@@ -9,14 +9,14 @@ use Traversable;
  * Something that can represent an exception which occurs if a validation
  * fails.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface ValidationFailedExceptionInterface extends ValidationExceptionInterface
 {
     /**
      * Retrieves validation errors that are associated with this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return string[]|StringableInterface[]|Traversable A list of errors.
      *                                                     Each error is something that can be treated as a string, and represents

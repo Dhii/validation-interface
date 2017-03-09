@@ -7,14 +7,14 @@ use Dhii\Util\String\StringableInterface;
 /**
  * Something that can validate a value.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface ValidatorInterface
 {
     /**
      * Validates a value.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param mixed $value The subject of validation.
      *
