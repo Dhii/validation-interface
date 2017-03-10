@@ -30,6 +30,7 @@ class ValidationFailedExceptionInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
                 ->getValidationErrors()
+                ->getSubject()
                 ->new();
 
         return $mock;
