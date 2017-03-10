@@ -1,6 +1,5 @@
 language: php
 php:
-  - '5.0'
   - '5.3'
   - '5.4'
   - '5.5'
@@ -10,7 +9,14 @@ php:
   - nightly
 
 before_script:
-  - composer install
+  - composer update
 
 script:
-  - phpunit
+  - vendor/bin/phpunit
+
+after_script:
+    - vendor/bin/test-reporter --coverage-report="test/coverage/clover.xml"
+
+cache:
+  directories:
+    - $HOME/.composer/cache/files

@@ -1,5 +1,5 @@
 {
-    "name": "dhii/validator-interface",
+    "name": "dhii/validation-interface",
     "description": "A base interface for validators",
     "type": "library",
     "license": "MIT",

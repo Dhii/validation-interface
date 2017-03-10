@@ -1,34 +1,36 @@
 <?php
 
-namespace Dhii\Validation;
+namespace Dhii\Validation\FuncTest\Exception;
 
 use Xpmock\TestCase;
+use Dhii\Validation\Exception\ValidationFailedExceptionInterface;
 
 /**
- * Tests {@see Dhii\Validation\ValidatorInterface}.
+ * Tests {@see Dhii\Validation\Exception\ValidationFailedExceptionInterface}.
  *
  * @since 0.1
  */
-class ValidatorInterfaceTest extends TestCase
+class ValidationFailedExceptionInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since 0.1
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Validation\\ValidatorInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Validation\\Exception\\ValidationFailedExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
-     * @return ValidatorInterface
+     * @return ValidationFailedExceptionInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->validate()
+                ->getValidationErrors()
+                ->getSubject()
                 ->new();
 
         return $mock;
@@ -44,5 +46,6 @@ class ValidatorInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'Could not create a valid instance');
+        $this->assertInstanceOf('Dhii\\Validation\\Exception\\ValidationExceptionInterface', $subject, 'Could not create a valid instance');
     }
 }
