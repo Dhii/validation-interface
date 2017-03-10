@@ -19,7 +19,7 @@ interface ValidatorInterface
      *
      * @param mixed $value The subject of validation.
      *
-     * @throws ValidationExceptionInterface If problem validating.
+     * @throws ValidationExceptionInterface       If problem validating.
      * @throws ValidationFailedExceptionInterface If validation failed.
      */
     public function validate($value);
