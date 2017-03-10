@@ -23,4 +23,13 @@ interface ValidationFailedExceptionInterface extends ValidationExceptionInterfac
      *                                                    a description of why a validation subject is invalid.
      */
     public function getValidationErrors();
+
+    /**
+     * Retrieves the invalid subject.
+     *
+     * @since 0.1
+     *
+     * @return mixed The value that failed validation.
+     */
+    public function getSubject();
 }
