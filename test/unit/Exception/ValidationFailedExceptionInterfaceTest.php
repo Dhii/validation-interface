@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Validation\FuncTest\Exception;
+namespace Dhii\Validation\UnitTest\Exception;
 
 use Xpmock\TestCase;
 use Dhii\Validation\Exception\ValidationFailedExceptionInterface;
