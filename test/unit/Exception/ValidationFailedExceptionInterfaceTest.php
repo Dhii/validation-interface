@@ -46,6 +46,7 @@ class ValidationFailedExceptionInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'Could not create a valid instance');
-        $this->assertInstanceOf('Dhii\\Validation\\Exception\\ValidationExceptionInterface', $subject, 'Could not create a valid instance');
+        $this->assertInstanceOf('Dhii\\Validation\\Exception\\ValidationExceptionInterface', $subject, 'Subject does not implement required interface');
+        $this->assertInstanceOf('Dhii\\Validation\\SubjectAwareInterface', $subject, 'Subject does not implement required interface');
     }
 }
