@@ -29,6 +29,7 @@ class ValidationExceptionInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
+                ->getValidator()
                 ->new();
 
         return $mock;
