@@ -29,6 +29,7 @@ class ValidationFailedExceptionInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
+                ->getValidator()
                 ->getValidationErrors()
                 ->getSubject()
                 ->new();
@@ -45,7 +46,8 @@ class ValidationFailedExceptionInterfaceTest extends TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'Could not create a valid instance');
-        $this->assertInstanceOf('Dhii\Validation\Exception\ValidationExceptionInterface', $subject, 'Subject does not implement required interface');
+        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created');
+        $this->assertInstanceOf('Dhii\Validation\Exception\ValidationExceptionInterface', $subject, 'Subject does not implement a required interface');
+        $this->assertInstanceOf('Dhii\Validation\ValidatorAwareInterface', $subject, 'Subject does not implement a required interface');
     }
 }

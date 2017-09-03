@@ -3,33 +3,33 @@
 namespace Dhii\Validation\UnitTest;
 
 use Xpmock\TestCase;
-use Dhii\Validation\ValidatorInterface as TestSubject;
+use Dhii\Validation\ValidatorAwareInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
-class ValidatorInterfaceTest extends TestCase
+class ValidatorAwareInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Validation\ValidatorInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Validation\ValidatorAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      *
      * @return TestSubject
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->validate()
+                ->getValidator()
                 ->new();
 
         return $mock;
@@ -38,7 +38,7 @@ class ValidatorInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {
