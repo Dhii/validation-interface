@@ -32,6 +32,15 @@ class ValidationFailedExceptionInterfaceTest extends TestCase
                 ->getValidator()
                 ->getValidationErrors()
                 ->getSubject()
+                // ThrowableInterface
+                ->getMessage()
+                ->getCode()
+                ->getFile()
+                ->getLine()
+                ->getTrace()
+                ->getTraceAsString()
+                ->getPrevious()
+                ->__toString()
                 ->new();
 
         return $mock;
