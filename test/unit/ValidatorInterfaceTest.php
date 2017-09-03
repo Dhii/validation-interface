@@ -1,11 +1,12 @@
 <?php
 
-namespace Dhii\Validation;
+namespace Dhii\Validation\UnitTest;
 
 use Xpmock\TestCase;
+use Dhii\Validation\ValidatorInterface as TestSubject;
 
 /**
- * Tests {@see Dhii\Validation\ValidatorInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since 0.1
  */
@@ -16,14 +17,14 @@ class ValidatorInterfaceTest extends TestCase
      *
      * @since 0.1
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Validation\\ValidatorInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Validation\ValidatorInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
-     * @return ValidatorInterface
+     * @return TestSubject
      */
     public function createInstance()
     {
