@@ -3,9 +3,10 @@
 namespace Dhii\Validation\UnitTest;
 
 use Xpmock\TestCase;
+use Dhii\Validation\ValidatorInterface;
 
 /**
- * Tests {@see Dhii\Validation\ValidatorInterface}.
+ * Tests {@see \Dhii\Validation\ValidatorInterface}.
  *
  * @since 0.1
  */
@@ -16,7 +17,7 @@ class ValidatorInterfaceTest extends TestCase
      *
      * @since 0.1
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Validation\\ValidatorInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Validation\ValidatorInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -43,6 +44,6 @@ class ValidatorInterfaceTest extends TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'Could not create a valid instance');
+        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created');
     }
 }

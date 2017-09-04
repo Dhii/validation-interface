@@ -1,30 +1,30 @@
 <?php
 
-namespace Dhii\Validation\UnitTest\Exception;
+namespace Dhii\Validation\UnitTest;
 
 use Xpmock\TestCase;
-use Dhii\Validation\Exception\ValidationExceptionInterface;
+use Dhii\Validation\ValidatorAwareInterface;
 
 /**
- * Tests {@see \Dhii\Validation\Exception\ValidationExceptionInterface}.
+ * Tests {@see \Dhii\Validation\ValidatorAwareInterface}.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
-class ValidationExceptionInterfaceTest extends TestCase
+class ValidatorAwareInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Validation\Exception\ValidationExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Validation\ValidatorAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      *
-     * @return ValidationExceptionInterface
+     * @return ValidatorAwareInterface
      */
     public function createInstance()
     {
@@ -38,7 +38,7 @@ class ValidationExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {
