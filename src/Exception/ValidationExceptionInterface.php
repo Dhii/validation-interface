@@ -2,6 +2,7 @@
 
 namespace Dhii\Validation\Exception;
 
+use Dhii\Exception\ThrowableInterface;
 use Dhii\Validation\ValidatorAwareInterface;
 
 /**
@@ -10,6 +11,8 @@ use Dhii\Validation\ValidatorAwareInterface;
  *
  * @since 0.1
  */
-interface ValidationExceptionInterface extends ValidatorAwareInterface
+interface ValidationExceptionInterface extends
+        ThrowableInterface,
+        ValidatorAwareInterface
 {
 }

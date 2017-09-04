@@ -3,10 +3,10 @@
 namespace Dhii\Validation\UnitTest\Exception;
 
 use Xpmock\TestCase;
-use Dhii\Validation\Exception\ValidationExceptionInterface;
+use Dhii\Validation\Exception\ValidationExceptionInterface as TestSubject;
 
 /**
- * Tests {@see \Dhii\Validation\Exception\ValidationExceptionInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since 0.1
  */
@@ -30,6 +30,15 @@ class ValidationExceptionInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
                 ->getValidator()
+                // ThrowableInterface
+                ->getMessage()
+                ->getCode()
+                ->getFile()
+                ->getLine()
+                ->getTrace()
+                ->getTraceAsString()
+                ->getPrevious()
+                ->__toString()
                 ->new();
 
         return $mock;
@@ -45,5 +54,6 @@ class ValidationExceptionInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created');
+        $this->assertInstanceOf('Dhii\Exception\ThrowableInterface', $subject, 'Subject does not implement a required interface');
     }
 }
