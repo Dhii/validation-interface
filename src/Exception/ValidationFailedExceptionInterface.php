@@ -2,7 +2,7 @@
 
 namespace Dhii\Validation\Exception;
 
-use Dhii\Util\String\StringableInterface;
+use Dhii\Util\String\StringableInterface as Stringable;
 use Traversable;
 use Dhii\Validation\SubjectAwareInterface;
 
@@ -21,9 +21,9 @@ interface ValidationFailedExceptionInterface extends
      *
      * @since 0.1
      *
-     * @return string[]|StringableInterface[]|Traversable A list of errors.
-     *                                                    Each error is something that can be treated as a string, and represents
-     *                                                    a description of why a validation subject is invalid.
+     * @return string[]|Stringable[]|Traversable A list of errors.
+     *                                           Each error is something that can be treated as a string, and represents
+     *                                           a description of why a validation subject is invalid.
      */
     public function getValidationErrors();
 }
