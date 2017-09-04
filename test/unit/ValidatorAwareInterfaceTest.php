@@ -3,10 +3,10 @@
 namespace Dhii\Validation\UnitTest;
 
 use Xpmock\TestCase;
-use Dhii\Validation\ValidatorAwareInterface;
+use Dhii\Validation\ValidatorAwareInterface as TestSubject;
 
 /**
- * Tests {@see \Dhii\Validation\ValidatorAwareInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */
@@ -24,7 +24,7 @@ class ValidatorAwareInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      *
-     * @return ValidatorAwareInterface
+     * @return TestSubject
      */
     public function createInstance()
     {
