@@ -7,14 +7,14 @@ use Traversable;
 /**
  * Something that can validate a value according to a specification.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface SpecValidatorInterface extends ValidatorInterface
 {
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @param array|Traversable|null $spec A list of criteria, a.k.a. the spec, if any.
      */

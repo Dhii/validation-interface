@@ -5,14 +5,14 @@ namespace Dhii\Validation;
 /**
  * Something that can have a validator retrieved from it.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface ValidatorAwareInterface
 {
     /**
      * Retrieves the validator.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return ValidatorInterface|null The validator, if any.
      */

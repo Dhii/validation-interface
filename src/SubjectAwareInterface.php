@@ -5,14 +5,14 @@ namespace Dhii\Validation;
 /**
  * Something that can have a subject retrieved.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface SubjectAwareInterface
 {
     /**
      * Retrieves the subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return mixed The subject.
      */
