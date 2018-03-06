@@ -2,6 +2,8 @@
 
 namespace Dhii\Validation;
 
+use Traversable;
+
 /**
  * Something that can have a specification retrieved.
  *
