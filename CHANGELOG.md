@@ -6,5 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
 
+## [0.2-alpha1] - 2018-03-06
+### Added
+- `SpecValidatorInterface`.
+- `SpecAwareInterface`.
+- `SubjectAwareInterface`.
+- `ValidatorAwareInterface`.
+
 ## [0.1] - 2017-03-09
 Initial release, containing validator and exception interfaces.
