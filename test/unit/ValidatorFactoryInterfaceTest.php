@@ -3,21 +3,21 @@
 namespace Dhii\Validation\UnitTest;
 
 use Xpmock\TestCase;
-use Dhii\Validation\SpecValidatorInterface as TestSubject;
+use Dhii\Validation\ValidatorFactoryInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */
-class SpecValidatorInterfaceTest extends TestCase
+class ValidatorFactoryInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Validation\SpecValidatorInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Validation\ValidatorFactoryInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -29,10 +29,9 @@ class SpecValidatorInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->validate()
-                ->new();
+                     ->make();
 
-        return $mock;
+        return $mock->new();
     }
 
     /**
@@ -44,7 +43,16 @@ class SpecValidatorInterfaceTest extends TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'Could not create a valid instance');
-        $this->assertInstanceOf('Dhii\Validation\ValidatorInterface', $subject, 'Could not create a valid instance');
+        $this->assertInstanceOf(
+            static::TEST_SUBJECT_CLASSNAME,
+            $subject,
+            'A valid instance of the test subject could not be created.'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\Factory\FactoryInterface',
+            $subject,
+            'Test subject does not implement expected interface.'
+        );
     }
 }
