@@ -28,6 +28,12 @@
             "Dhii\\Validation\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Dhii\\Validation\\UnitTest\\": "test/unit",
+            "Dhii\\Validation\\FuncTest\\": "test/functional"
+        }
+    },
     "scripts": {
         "test": "phpunit",
         "csfix": "php-cs-fixer fix -vvv"
