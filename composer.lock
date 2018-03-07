@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "097e1ea2224be096065912771bd4d812",
+    "content-hash": "ff920f29ff9a0a0b8394ea7d746ebff6",
     "packages": [
         {
             "name": "dhii/exception-interface",
-            "version": "v0.2-alpha3",
+            "version": "v0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/exception-interface.git",
-                "reference": "8271ae49553695bc8d2cc4707f8a1459a031e64f"
+                "reference": "fe64b30f67830474683357f77dc4a097bf84767e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/exception-interface/zipball/8271ae49553695bc8d2cc4707f8a1459a031e64f",
-                "reference": "8271ae49553695bc8d2cc4707f8a1459a031e64f",
+                "url": "https://api.github.com/repos/Dhii/exception-interface/zipball/fe64b30f67830474683357f77dc4a097bf84767e",
+                "reference": "fe64b30f67830474683357f77dc4a097bf84767e",
                 "shasum": ""
             },
             "require": {
@@ -31,11 +31,6 @@
                 "ptrofimov/xpmock": "^1.1"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "0.2.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Dhii\\Exception\\": "src"
@@ -52,24 +47,24 @@
                 }
             ],
             "description": "Interfaces for most common exceptions",
-            "time": "2018-02-23T13:24:59+00:00"
+            "time": "2017-09-01T18:00:26+00:00"
         },
         {
             "name": "dhii/factory-interface",
-            "version": "dev-develop",
+            "version": "v0.1-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/factory-interface.git",
-                "reference": "4bf12153f24df94157068c87f3f40d7cfca0fbbe"
+                "reference": "f5180bde74ba778a8e7269bf92e8420f7527c512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/factory-interface/zipball/4bf12153f24df94157068c87f3f40d7cfca0fbbe",
-                "reference": "4bf12153f24df94157068c87f3f40d7cfca0fbbe",
+                "url": "https://api.github.com/repos/Dhii/factory-interface/zipball/f5180bde74ba778a8e7269bf92e8420f7527c512",
+                "reference": "f5180bde74ba778a8e7269bf92e8420f7527c512",
                 "shasum": ""
             },
             "require": {
-                "dhii/exception-interface": "^0.2",
+                "dhii/exception-interface": "^0.1|^0.2",
                 "php": "^5.3 | ^7.0"
             },
             "require-dev": {
@@ -102,7 +97,7 @@
                 }
             ],
             "description": "Interfaces for working with factories.",
-            "time": "2018-03-06T16:51:58+00:00"
+            "time": "2018-03-07T11:08:40+00:00"
         },
         {
             "name": "dhii/stringable-interface",
