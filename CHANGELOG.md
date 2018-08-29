@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
 
+## [0.2] - 2018-08-29
+Stable release. No code changed.
+
 ## [0.2-alpha2] - 2018-03-07
 ### Added
 - `ValidatorFactoryInterface`
