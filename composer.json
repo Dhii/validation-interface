@@ -10,13 +10,18 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-        "php": "^5.3 | ^7.0"
+        "php": "^5.3 | ^7.0",
+        "dhii/exception-interface": "^0.1|^0.2",
+        "dhii/factory-interface": "^0.1"
     },
     "require-dev": {
         "dhii/php-cs-fixer-config": "dev-php-5.3",
         "phpunit/phpunit": "^4.8",
-        "ptrofimov/xpmock": "^1.1"
+        "ptrofimov/xpmock": "^1.1",
+        "codeclimate/php-test-reporter": "<=0.3.2",
+        "dhii/stringable-interface": "^0.1"
     },
     "autoload": {
         "psr-4": {
@@ -25,7 +30,17 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Dhii\\Collection\\FuncTest\\": "test/functional"
+            "Dhii\\Validation\\UnitTest\\": "test/unit",
+            "Dhii\\Validation\\FuncTest\\": "test/functional"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "csfix": "php-cs-fixer fix -vvv"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.3.x-dev"
         }
     }
 }
