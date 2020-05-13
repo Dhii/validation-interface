@@ -10,10 +10,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `ValidatorFactoryInterface`.
 - `SubjectAwareInterface`.
 - `ValidatorAwareInterface`.
+- `@since` tags everywhere.
 
 ### Changed
 - `ValidationFailedExceptionInterface::getSubject()` is now `getValidationSubject().
-- Removed `@since` tags everywhere.
 
 ## [0.2] - 2018-08-29
 Stable release. No code changed.
