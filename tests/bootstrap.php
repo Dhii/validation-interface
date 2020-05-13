@@ -1,5 +1,9 @@
 <?php
 
-error_reporting(E_ALL | E_STRICT);
+(function (string $basePath) {
+    $baseDir = dirname($basePath, 2);
+    define('ROOT_DIR', $baseDir);
 
-require_once dirname(__FILE__).'/../vendor/autoload.php';
+    /** @noinspection PhpIncludeInspection */
+    require_once "$baseDir/vendor/autoload.php";
+})(__FILE__);
