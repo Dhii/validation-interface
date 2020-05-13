@@ -1,6 +1,6 @@
 /vendor/
-/test/coverage/
-/test/log/
+/tests/coverage/
+/tests/log/
 /build/
 
 /.env
