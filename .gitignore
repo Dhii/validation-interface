@@ -2,3 +2,5 @@
 /test/coverage/
 /test/log/
 /build/
+
+/.env
