@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `SubjectAwareInterface`.
 - `ValidatorAwareInterface`.
 - `@since` tags everywhere.
+- Support for PHP < 7.1.
 
 ### Changed
 - `ValidationFailedExceptionInterface::getSubject()` is now `getValidationSubject().
