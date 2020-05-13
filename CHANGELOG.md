@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [[*next-version*]] - YYYY-MM-DD
 ### Removed
 - `SpecAwareInterface`.
+- `ValidatorFactoryInterface`.
 
 ## [0.2] - 2018-08-29
 Stable release. No code changed.
