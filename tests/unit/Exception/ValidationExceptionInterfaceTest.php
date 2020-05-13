@@ -2,58 +2,36 @@
 
 namespace Dhii\Validation\UnitTest\Exception;
 
-use Xpmock\TestCase;
-use Dhii\Validation\Exception\ValidationExceptionInterface as TestSubject;
+use Dhii\Validation\Exception\ValidationExceptionInterface as Subject;
+use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\TestCase;
 
 /**
- * Tests {@see TestSubject}.
- *
- * @since 0.1
+ * Tests {@see Subject}.
  */
 class ValidationExceptionInterfaceTest extends TestCase
 {
     /**
-     * The class name of the test subject.
-     *
-     * @since 0.1
-     */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Validation\Exception\ValidationExceptionInterface';
-
-    /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
-     *
-     * @return ValidationExceptionInterface
+     * @return Subject|MockObject
      */
-    public function createInstance()
+    protected function createSubject(): Subject
     {
-        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->getValidator()
-                // ThrowableInterface
-                ->getMessage()
-                ->getCode()
-                ->getFile()
-                ->getLine()
-                ->getTrace()
-                ->getTraceAsString()
-                ->getPrevious()
-                ->__toString()
-                ->new();
+        $mock = $this->getMockBuilder(Subject::class)
+            ->getMock();
 
         return $mock;
     }
 
-    /**
-     * Tests whether a valid instance of the test subject can be created.
-     *
-     * @since 0.1
-     */
-    public function testCanBeCreated()
+    public function testInstantiation()
     {
-        $subject = $this->createInstance();
+        {
+            $subject = $this->createSubject();
+        }
 
-        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created');
-        $this->assertInstanceOf('Dhii\Exception\ThrowableInterface', $subject, 'Subject does not implement a required interface');
+        {
+            $this->assertInstanceOf(Subject::class, $subject);
+        }
     }
 }

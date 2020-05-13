@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - `SpecAwareInterface`.
 - `ValidatorFactoryInterface`.
+- `SubjectAwareInterface`.
+- `ValidatorAwareInterface`.
+
+### Changed
+- `ValidationFailedExceptionInterface::getSubject()` is now `getValidationSubject().
+- Removed `@since` tags everywhere.
 
 ## [0.2] - 2018-08-29
 Stable release. No code changed.
