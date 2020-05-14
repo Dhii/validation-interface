@@ -25,13 +25,11 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Dhii\\Validation\\UnitTest\\": "test/unit",
-            "Dhii\\Validation\\FuncTest\\": "test/functional"
+            "Dhii\\Validation\\UnitTest\\": "test/unit"
         }
     },
     "scripts": {
-        "test": "phpunit",
-        "csfix": "php-cs-fixer fix -vvv"
+        "test": "phpunit"
     },
     "extra": {
         "branch-alias": {
