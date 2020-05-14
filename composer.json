@@ -5,22 +5,17 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Dhii Team",
-            "email": "development@dhii.co"
+            "name": "Anton Ukhanev",
+            "email": "xedin.unknown@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^5.3 | ^7.0",
-        "dhii/exception-interface": "^0.1|^0.2",
-        "dhii/factory-interface": "^0.1"
+        "php": "^7.1"
     },
     "require-dev": {
-        "dhii/php-cs-fixer-config": "dev-php-5.3",
-        "phpunit/phpunit": "^4.8",
-        "ptrofimov/xpmock": "^1.1",
-        "codeclimate/php-test-reporter": "<=0.3.2",
+        "phpunit/phpunit": "^7.0 | ^8.0",
         "dhii/stringable-interface": "^0.1"
     },
     "autoload": {
@@ -30,13 +25,11 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Dhii\\Validation\\UnitTest\\": "test/unit",
-            "Dhii\\Validation\\FuncTest\\": "test/functional"
+            "Dhii\\Validation\\UnitTest\\": "test/unit"
         }
     },
     "scripts": {
-        "test": "phpunit",
-        "csfix": "php-cs-fixer fix -vvv"
+        "test": "phpunit"
     },
     "extra": {
         "branch-alias": {

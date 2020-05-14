@@ -1,18 +1,21 @@
 <?php
+declare(strict_types=1);
 
 namespace Dhii\Validation\Exception;
 
-use Dhii\Exception\ThrowableInterface;
-use Dhii\Validation\ValidatorAwareInterface;
+use Dhii\Validation\ValidatorInterface;
+use Throwable;
 
 /**
  * Something that can represent an exception which can occur in or be related to
  * a validation process or component.
- *
- * @since 0.1
  */
-interface ValidationExceptionInterface extends
-        ThrowableInterface,
-        ValidatorAwareInterface
+interface ValidationExceptionInterface extends Throwable
 {
+    /**
+     * Retrieves the validator related to the problem.
+     *
+     * @return ValidatorInterface The validator.
+     */
+    public function getValidator(): ValidatorInterface;
 }

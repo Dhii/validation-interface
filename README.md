@@ -27,7 +27,6 @@ validation entry point (trigger) as `validate()`. Validators MUST implement
 this interface.
 - [`ValidatorAwareInterface`] - Something that has a validator.
 - [`SubjectAwareInterface`] - Something that knows about the validation subject.
-- [`SpecAwareInterface`] - Something that knows about the validation specification.
 - [`ValidationFailedExceptionInterface`] - Occurs when subject fails validation,
 and reports the failed subject, and the validator that validated the subject,
 as well as a list of validation error messages.
@@ -37,6 +36,5 @@ as well as a list of validation error messages.
 [`ValidatorInterface`]:                     src/ValidatorInterface.php
 [`ValidatorAwareInterface`]:                src/ValidatorAwareInterface.php
 [`SubjectAwareInterface`]:                  src/SubjectAwareInterface.php
-[`SpecAwareInterface`]:                     src/SpecAwareInterface.php
 [`ValidationFailedExceptionInterface`]:     src/Exception/ValidationFailedExceptionInterface.php
 [`ValidationExceptionInterface`]:           src/Exception/ValidationExceptionInterface.php
