@@ -8,8 +8,6 @@
         useDocblockTypes="true"
         usePhpDocMethodsWithoutMagicCall="false"
         strictBinaryOperands="true"
-        requireVoidReturnType="true"
-        useAssertForType="false"
         rememberPropertyAssignmentsAfterCall="true"
         allowPhpStormGenerics="true"
         allowCoercionFromStringToClassConst="false"
@@ -36,6 +34,7 @@
         <ignoreFiles>
             <directory name="vendor/phpunit/php-code-coverage/tests"/>
             <directory name="vendor/phpspec/prophecy"/>
+            <file name="vendor/vimeo/psalm/dictionaries/scripts/update_signaturemap_from_other_tool.php"/>
         </ignoreFiles>
         <directory name="vendor" />
     </extraFiles>
@@ -91,7 +90,6 @@
         <InvalidScalarArgument errorLevel="error"/>
         <InvalidScope errorLevel="error"/>
         <InvalidStaticInvocation errorLevel="error"/>
-        <MisplacedRequiredParam errorLevel="error"/>
         <MissingConstructor errorLevel="error"/>
         <MissingDependency errorLevel="error"/>
         <MissingFile errorLevel="error"/>
