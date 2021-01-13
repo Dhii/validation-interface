@@ -36,7 +36,6 @@
         <ignoreFiles>
             <directory name="vendor/phpunit/php-code-coverage/tests"/>
             <directory name="vendor/phpspec/prophecy"/>
-            <file name="vendor/symfony/polyfill-mbstring/bootstrap80.php"/>
         </ignoreFiles>
         <directory name="vendor" />
     </extraFiles>
