@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Dhii\Validation;
@@ -19,5 +20,5 @@ interface ValidatorInterface
      * @throws ValidationExceptionInterface       If problem validating.
      * @throws ValidationFailedExceptionInterface If validation failed.
      */
-    public function validate($value);
+    public function validate($value): void;
 }

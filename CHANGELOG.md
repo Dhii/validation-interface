@@ -5,6 +5,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
+### Added
+- `ValidatorInterface#validate()` now has explicit `void` return type.
+
+### Changed
+- Updated and added missing configs.
+- Allowing PHP 8.
+- Now _updating_ composer deps in CI, proving that this package is in fact installable on all target versions.
+- Using newer Psalm.
+
+### Removed
+- No longer depends on Dhii `Stringable` interface. Instead, using Symfony Polyfill for testing.
+This is recommended for use by consuming projects in cases when working PHP lower than 8.
 
 ## [0.3.0-alpha1] - 2020-05-14
 ### Removed

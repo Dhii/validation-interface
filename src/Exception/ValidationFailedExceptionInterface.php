@@ -1,9 +1,10 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Dhii\Validation\Exception;
 
-use Dhii\Util\String\StringableInterface as Stringable;
+use Stringable;
 use Exception;
 
 /**
