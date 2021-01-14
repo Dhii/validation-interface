@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
+### Removed
+- `ValidationExceptionInterface` was redundant, and burdened implementations.
+- `ValidatorInterface#validate()` must now throw `RuntimeException` instead of `ValidationExceptionInterface`.
 
 ## [0.3.0-alpha2] - 2021-01-14
 ### Added

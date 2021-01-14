@@ -2,10 +2,10 @@
 
 namespace Dhii\Validation\UnitTest\Exception;
 
-use Dhii\Validation\Exception\ValidationExceptionInterface;
 use Dhii\Validation\Exception\ValidationFailedExceptionInterface as Subject;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
+use Throwable;
 
 /**
  * Tests {@see Subject}.
@@ -33,7 +33,7 @@ class ValidationFailedExceptionInterfaceTest extends TestCase
 
         {
             $this->assertInstanceOf(Subject::class, $subject);
-            $this->assertInstanceOf(ValidationExceptionInterface::class, $subject);
+            $this->assertInstanceOf(Throwable::class, $subject);
         }
     }
 }

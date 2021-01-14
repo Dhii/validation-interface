@@ -6,12 +6,13 @@ namespace Dhii\Validation\Exception;
 
 use Stringable;
 use Exception;
+use Throwable;
 
 /**
  * Something that can represent an exception which occurs if a validation
  * fails.
  */
-interface ValidationFailedExceptionInterface extends ValidationExceptionInterface
+interface ValidationFailedExceptionInterface extends Throwable
 {
     /**
      * Retrieves validation errors that are associated with this instance.
