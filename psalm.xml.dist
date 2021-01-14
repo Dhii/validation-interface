@@ -32,7 +32,7 @@
 
     <extraFiles>
         <ignoreFiles>
-            <directory name="vendor/phpunit/php-code-coverage/tests"/>
+            <directory name="vendor/phpunit/php-code-coverage"/>
             <directory name="vendor/phpspec/prophecy"/>
             <file name="vendor/vimeo/psalm/dictionaries/scripts/update_signaturemap_from_other_tool.php"/>
         </ignoreFiles>
